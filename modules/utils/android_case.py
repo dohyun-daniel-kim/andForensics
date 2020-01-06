@@ -44,13 +44,16 @@ class Case(object):
 				if files == []:
 					logger.error('Input directory must contain a image file.')
 					return False
-				else:
+				else:					
 					for fname in files:
-						if str(fname).endswith('.dd'):
-							self.image_file_path = os.path.join(root, fname)
-							self.list_image_file_path.append(self.image_file_path)
+						with open(os.path.join(root, fname), "rb") as f:
+							f.seek(0x438)
+							signature = binascii.b2a_hex(f.read(2))
+							if str(signature) == "b'53ef'":
+								self.image_file_path = os.path.join(root, fname)
+								self.list_image_file_path.append(self.image_file_path)
 			if self.list_image_file_path == []:
-				logger.error("Insert at least one image file with a 'dd' extension.")
+				logger.error("Insert the EXT4 filesystem image file.")
 		else: return False
 		return self.list_image_file_path
 
