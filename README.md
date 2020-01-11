@@ -56,3 +56,40 @@ The above command means:
 - The **<c:\case_image_dir>** directory contains the image file of the userdata partition on the Android device with the Ext4 filesystem.
 - andForensics will save the output files to the **<c:\output_dir>** directory.
 - andForensics will multiprocess using **eight processors**.
+
+## *List of test phones*
+No. | OEM | Model | Name | Description
+--- | ----|-------|------|-------------
+1|	Samsung|	SHV-E210S|	Galaxy S3 LTE|  
+2|	Samsung|	SHV-E250K|	Galaxy Note2|
+3|	Samsung|	SHV-E250L|	Galaxy Note2|   DFRWS2017Challenge
+4|	Samsung|	SHV-E250S|	Galaxy Note2|   DFRWS2017Challenge
+5|	Samsung|	SHV-E250S|	Galaxy Note2|   
+6|	Samsung|	SHV-E270L|	Galaxy Grand|   
+7|	Samsung|	SHV-E300K|	Galaxy S4|      
+8|	Samsung|	SHV-E300S|	Galaxy S4|      
+9|	Samsung|	SHV-E330S|	Galaxy S4 LTE-A|
+10|	Samsung|	SHV-E370K|	Galaxy S4 Mini| 
+11|	Samsung|	SHV-E500L|	Galaxy Win|     
+12|	Samsung|	SHV-E500S|	Galaxy Win|     
+13|	Samsung|	SHW-M440S|	Galaxy S3|      
+14|	Samsung|	SM-G900L|	Galaxy S5|      
+15|	Samsung|	SM-G920S|	Galaxy S6|      
+16|	Samsung|	SM-N900K|	Galaxy Note3|   
+17|	Samsung|	SM-N900S|	Galaxy Note3|   
+18|	Samsung|	SM-N910K|	Galaxy Note4|   
+19|	Samsung|	SM-N910L|	Galaxy Note4|   
+20|	Samsung|	SM-N910S|	Galaxy Note4|   
+21|	Samsung|	SM-N920S|	Galaxy Note5|   
+22|	Samsung|	SM-T255S|	Galaxy W|       
+23|	LG|	     LG-F160S|	Optimus LTE2|   
+24|	LG|     	LG-F200K|	Optimus Vu2|    
+25|	LG|     	LG-F240S|	Optimus G pro|  
+26|	LG|     	LG-F310L|	LG GX|          
+27|	LG|     	LG-F320L|	LG G2|          
+28|	LG|     	LG-F350S|	LG G Pro2|      
+29|	LG|     	LG-F400K|	LG G3|          
+30|	Pantech|	IM-A830K|	Vega Racer2|    
+31|	Pantech|	IM-A850S|	Vega R3|        
+32|	Pantech|	IM-A870L|	Vega Iron|      
+33|	Pantech|	IM-A890S|	Vega Secret Note|
