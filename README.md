@@ -62,8 +62,8 @@ No. | OEM | Model | Name | Description
 --- | ----|-------|------|-------------
 1|	Samsung|	SHV-E210S|	Galaxy S3 LTE|  
 2|	Samsung|	SHV-E250K|	Galaxy Note2|
-3|	Samsung|	SHV-E250L|	Galaxy Note2|   DFRWS2017Challenge
-4|	Samsung|	SHV-E250S|	Galaxy Note2|   DFRWS2017Challenge
+3|	Samsung|	SHV-E250L|	Galaxy Note2|   [DFRWS 2017-2018 Forensic Challenge](https://jijames.github.io/DFRWS2018Challenge/)
+4|	Samsung|	SHV-E250S|	Galaxy Note2|   [DFRWS 2017-2018 Forensic Challenge](https://jijames.github.io/DFRWS2018Challenge/)
 5|	Samsung|	SHV-E250S|	Galaxy Note2|   
 6|	Samsung|	SHV-E270L|	Galaxy Grand|   
 7|	Samsung|	SHV-E300K|	Galaxy S4|      
