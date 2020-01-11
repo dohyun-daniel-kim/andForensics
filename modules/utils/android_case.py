@@ -4,6 +4,7 @@ import sys
 import logging
 from modules.utils.android_sqlite3 import SQLite3
 import multiprocessing
+import binascii
 
 logger = logging.getLogger('andForensics')
 
