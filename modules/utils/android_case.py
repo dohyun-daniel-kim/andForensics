@@ -4,6 +4,7 @@ import sys
 import logging
 from modules.utils.android_sqlite3 import SQLite3
 import multiprocessing
+import binascii
 
 logger = logging.getLogger('andForensics')
 
@@ -58,13 +59,15 @@ class Case(object):
 		return self.list_image_file_path
 
 #---------------------------------------------------------------------------------------------------------------
-	def set_file_path(self):
+	def set_file_path(self, args, image_file_path):
+		self.image_file_path = image_file_path
+		self.output_dir_path = args.output_dir
 		if self.input_dir_path[-1] == os.sep:
 			self.input_dir_path = self.input_dir_path[:-1]
 		if self.output_dir_path[-1] == os.sep:
 			self.output_dir_path = self.output_dir_path[:-1]
 		self.image_file_name = os.path.basename(self.image_file_path)
-		self.output_dir_path = self.output_dir_path + os.sep + self.image_file_name.rsplit('.dd', 1)[0]
+		self.output_dir_path = self.output_dir_path + os.sep + self.image_file_name
 		self.log_file_name = 'log_' + self.image_file_name + '.txt'
 		self.log_file_path = self.output_dir_path + os.sep + 'log_' + self.image_file_name + '.txt'
 		self.load_db_path = self.output_dir_path + os.sep + 'loaddb_' + self.image_file_name + '.db'

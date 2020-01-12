@@ -35,7 +35,7 @@ def main(args):
         exit(0)
 
     for image_file_path in list_image_file_path:
-        log_file_path = case.set_file_path()
+        log_file_path = case.set_file_path(args, image_file_path)
         logger.addHandler(logging.FileHandler(log_file_path))
 
         if (args.phase == None) | (args.phase == "scan"):
