@@ -72,7 +72,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description = 'andForensics - Android Forensic Tool \nsimple usage example: python3 andForensics.py -i <INPUT_DIR> -o <OUTPUT_DIR> -proc <NUMBER OF PROCESS FOR MULTIPROCESSING>', formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-i', action = "store", dest = "input_dir",
-                        help = "Input directory containing the Android image file with the extention 'dd'.")
+                        help = "Input directory containing the Android image file with EXT4 file system. \nIt can have multiple image files.")
     parser.add_argument('-o', action = "store", dest = "output_dir",
                         help = "Output directory to store analysis result files.")
     parser.add_argument('-p', action = "store", dest = "phase",
