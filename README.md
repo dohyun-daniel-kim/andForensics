@@ -35,7 +35,8 @@ usage: andForensics.py [-h] [-i INPUT_DIR] [-o OUTPUT_DIR] [-p PHASE]
 
 optional arguments:
   -h, --help            show this help message and exit
-  -i INPUT_DIR          Input directory containing the Android userdata image file with EXT4 file system.
+  -i INPUT_DIR          Input directory containing the Android image file with EXT4 file system. 
+                        It can have multiple image files.
   -o OUTPUT_DIR         Output directory to store analysis result files.
   -p PHASE              Select a single investigation phase. (default: all phases)
                          - [1/3] Scanning: "scan"
